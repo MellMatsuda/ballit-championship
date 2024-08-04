@@ -39,16 +39,6 @@ h2 {
 
 h3 { margin-top: 10px; }
 
-/* Responsividade */
-
-@media (max-width: 768px) {
-    .content { padding: 20px; }
-
-    h1 { font-size: 2em; }
-
-    h2 { font-size: 1em; }
-}
-
 .main-btn {
     background-color: #e2e2e2;
     color: #000;
@@ -68,3 +58,25 @@ h3 { margin-top: 10px; }
 }
 
 .center { text-align: center; }
+
+.top-content {
+    text-align: left;
+    margin-top: -40px;
+}
+
+.return {
+    color: #7c7c7c;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .content { padding: 20px; }
+
+    h1 { font-size: 2em; }
+
+    h2 { font-size: 1em; }
+}
