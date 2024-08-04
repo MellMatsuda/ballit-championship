@@ -1,0 +1,5 @@
+const animals = ["Leões", "Tigres", "Elefantes", "Rinocerontes", "Hipopótamos", "Cangurus", "Golfinhos", "Tubarões", "Pinguins", "Lobos", "Gatos", "Cachorros", "Porcos", "Esquilos", "Felinos", "Touros", "Javalis", "Gorilas", "Falcões", "Gaviões"];
+
+const adjectives = ["Voadores", "Raivosos", "Vorazes", "Estilosos", "Implacáveis", "Sanguinários", "Indomáveis", "Temíveis", "Brutais", "Mortais", "Selvagens", "Furiosos", "Perigosos", "Carinhosos", "Encantadores", "Brincalhões", "Fofinhos", "Amorosos", "Bobões"];
+
+const warcry = ["Vamos lá!", "Vamos ganhar!", "Sem desistir!", "Juntos somos fortes!", "Para a vitória!", "Nós podemos!", "Vamos com tudo!", "Força e garra!", "Unidos venceremos!", "Nada nos para!", "Lutem até o fim!", "Com garra e coragem!", "Somos invencíveis!", "Não há limites!", "Vencer ou vencer!", "Não podemos falhar!", "Mostrem sua força!", "Vamos arrasar!", "Em frente, sempre!", "Nossa hora é agora!"];

@@ -1,0 +1,18 @@
+/* Página incial */
+
+.index-body {
+    background-image: url("../../img/background.svg"); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+}
+
+.index-container {
+    text-align: left;
+}
+
+.index-h1{
+    color: #000000;
+    margin-top: -10px;
+    font-size: 2.5em;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@700&family=Tilt+Neon:XROT,YROT@-45..45,-45..45&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/components/main.css">
+        <link rel="stylesheet" href="../css/components/form.css">
+        <title>🏆 Ballit Championship</title>
+    </head>
+
+    <body class="main-body">
+        <div class="container main-container">
+            <div class="content">
+
+                <div class="top-content">
+                    <a href="../../index.html" class="return">◀ Voltar</a> 
+                </div>
+                
+                <h1>Cadastro de Times</h1>
+                <h2>Informe o número de times participantes:</h2>
+
+                <div class="teams-btn">
+                    <button class="btn-team main-btn" teams-data="8">8</button>
+                    <button class="btn-team main-btn" teams-data="10">10</button>
+                    <button class="btn-team main-btn" teams-data="12">12</button>
+                    <button class="btn-team main-btn" teams-data="14">14</button>
+                    <button class="btn-team main-btn" teams-data="16">16</button>
+                </div>
+                
+                <div class="teams-info" style="display: none;"> 
+                    <div class="top-teams-info">
+                        <h1>Informação dos Times</h2><br>
+                        <button class="choose main-btn">Escolha por mim</button>
+                    </div>
+
+                    <!-- Container com formulário de cadastro -->
+                    <div class="teams-container"></div>
+
+                    <div class="center">
+                        <button class="confirm main-btn">CONFIRMAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/components/form.js"></script>
+        <script src="../js/components/random-teams.js"></script>
+    </body>
+</html>
