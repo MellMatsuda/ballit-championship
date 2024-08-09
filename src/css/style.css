@@ -1,19 +1,23 @@
-/* CSS padrão */
-
 body {
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
+    background-color: #ececec;
+    overflow-x: hidden;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 600px;
     margin: 60px;
 }
 
@@ -22,26 +26,27 @@ body {
     padding: 80px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    max-width: 800px;
-    width: 100%;
+    min-width: 550px;
 }
 
 h1 {
-    color: #000000;
+    color: black;
     margin-bottom: 10px;
 }
 
 h2 {
-    color: #000000;
+    color: black;
     font-size: 1.2em;
     margin-bottom: 50px;
 }
 
-h3 { margin-top: 10px; }
+h3 {
+    margin-top: 10px;
+}
 
 .main-btn {
     background-color: #e2e2e2;
-    color: #000;
+    color: black;
     border: none;
     padding: 15px 30px;
     font-size: 1.3em;
@@ -53,30 +58,69 @@ h3 { margin-top: 10px; }
 }
 
 .main-btn:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: black;
+    color: white;
 }
 
-.center { text-align: center; }
+.main-btn.selected {
+    background-color: black;
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
 
 .top-content {
     text-align: left;
     margin-top: -40px;
 }
 
-.return {
-    color: #7c7c7c;
-    text-decoration: none;
-    margin-bottom: 20px;
-    font-size: 1.2em;
+.hidden {
+    display: none;
+}
+
+.home {
+    width: 35px;
 }
 
 /* Responsividade */
 
 @media (max-width: 768px) {
-    .content { padding: 20px; }
+    .content {
+        width: 50%;
+    }
 
-    h1 { font-size: 2em; }
+    h1 {
+        font-size: 1.5em;
+    }
 
-    h2 { font-size: 1em; }
+    h2 {
+        font-size: 1em;
+    }
+
+    .main-btn {
+        font-size: 1em;
+    }
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    margin: auto;
+}
+
+.form-title {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+main {
+    width: 100vw;
+}
+
+.round-title {
+    margin-bottom: 30px;
 }

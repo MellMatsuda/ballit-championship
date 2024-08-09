@@ -1,0 +1,68 @@
+.game {
+    text-align: center;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid rgba(0, 0, 0, 0.178) 1px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 35%;
+}
+
+.name-team {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.score {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.versus {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.blot-btn,
+.plif-btn {
+    margin-bottom: 5px;
+    padding: 8px 16px;
+    width: 75%;
+}
+
+.blot-btn:hover {
+    background-color: rgb(0, 48, 0);
+}
+
+.plif-btn:hover {
+    background-color: rgb(0, 9, 54);
+}
+
+.actions {
+    margin: 20px;
+}
+
+.actions p {
+    margin: 10px 0;
+}
+
+h1 {
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+.end-btn {
+    margin-top: 10%;
+}

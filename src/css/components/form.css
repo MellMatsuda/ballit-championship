@@ -5,14 +5,14 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 30px;
 }
 
 .teams-info {
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 10px;
-    text-align: left; 
+    text-align: left;
+    margin-top: 20px;
 }
 
 .top-teams-info {
@@ -22,15 +22,15 @@
 
 .teams-container {
     overflow-y: scroll;
-    max-height: 400px; 
-    margin: 20px;
+    max-height: 400px;
+    margin: 10px;
 }
 
 .team-info {
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #cccccc;
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 .team-info label {
@@ -43,5 +43,11 @@
     width: 95%;
     padding: 8px;
     border: 1px solid #cccccc;
-    border-radius: 3px;
+    border-radius: 8px;
 }
+
+.team-title,
+.title2 {
+    margin: 6px 0;
+}
+

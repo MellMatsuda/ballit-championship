@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@700&family=Tilt+Neon:XROT,YROT@-45..45,-45..45&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/components/form.css" />
+        <link rel="stylesheet" href="../css/components/table.css" />
+        <link rel="stylesheet" href="../css/components/round.css" />
+        <title>🏆 Ballit Championship</title>
+    </head>
+
+    <body>
+        <main>
+            <div class="container">
+                <div class="content">
+                    <div class="top-content">
+                        <a href="../../index.html">
+                            <img
+                                src="../img/home.svg"
+                                class="home"
+                                alt="home"
+                            />
+                        </a>
+                    </div>
+
+                    <!-- MODAL DE CADASTRO DE TIMES -->
+                    <div class="register">
+                        <h1 class="title">Cadastro de Times</h1>
+                        <p>Informe o número de times participantes:</p>
+                        <br />
+
+                        <div class="teams-btn">
+                            <button class="btn-team main-btn" teams-data="8">
+                                8
+                            </button>
+                            <button class="btn-team main-btn" teams-data="10">
+                                10
+                            </button>
+                            <button class="btn-team main-btn" teams-data="12">
+                                12
+                            </button>
+                            <button class="btn-team main-btn" teams-data="14">
+                                14
+                            </button>
+                            <button class="btn-team main-btn" teams-data="16">
+                                16
+                            </button>
+                        </div>
+
+                        <div class="teams-info hidden">
+                            <div class="top-teams-info">
+                                <h1 class="form-title">Informação dos Times</h1>
+                                <p>
+                                    Preencha todas as informações de cada time
+                                </p>
+                                <button
+                                    class="choose main-btn"
+                                    onclick="chooseForMe();"
+                                >
+                                    🎲 Escolha por mim
+                                </button>
+                            </div>
+
+                            <!-- Container com formulário de cadastro -->
+                            <div class="teams-container"></div>
+                            <br />
+
+                            <div class="center">
+                                <a
+                                    class="confirm main-btn"
+                                    onclick="confirmTeams(); championship();"
+                                    >✔️ Confirmar</a
+                                ><br /><br />
+                                <span id="alert-message"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MODAL DE FASE DO CAMPEONATO -->
+                    <div class="championship hidden">
+                        <h1 class="title">Campeonato</h1>
+                        <h2 class="round">[Fase]</h2>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="team-name">Partida</th>
+                                    <th class="team-name">Resultado</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <br />
+
+                        <div class="center">
+                            <a
+                                class="continue main-btn hidden"
+                                onclick="nextRound();"
+                                >Próxima fase</a
+                            >
+                            <a
+                                class="finish main-btn hidden"
+                                onclick="endChampionship();"
+                                >Placar</a
+                            >
+                        </div>
+                    </div>
+
+                    <!-- MODAL DE PARTIDA -->
+                    <div class="game hidden">
+                        <h1 class="title round-title">Partida</h1>
+                        <div class="scoreboard">
+                            <div class="team" id="team1">
+                                <span class="name-team"></span>
+                                <span class="score" id="score-team1"></span>
+                                <button class="blot-btn main-btn" team-data="1">
+                                    BLOT
+                                </button>
+                                <button class="plif-btn main-btn" team-data="1">
+                                    PLIF
+                                </button>
+                            </div>
+                            <h1 class="versus">VS</h1>
+                            <div class="team" id="team2">
+                                <span class="name-team"></span>
+                                <span class="score" id="score-team2"></span>
+                                <button class="blot-btn main-btn" team-data="2">
+                                    BLOT
+                                </button>
+                                <button class="plif-btn main-btn" team-data="2">
+                                    PLIF
+                                </button>
+                            </div>
+                        </div>
+                        <br />
+                        <a class="end-btn main-btn">Encerrar a partida</a>
+                        <br /><br />
+
+                        <div class="action">
+                            <span id="actions"></span>
+                        </div>
+                    </div>
+
+                    <!-- MODAL DE VENCEDOR -->
+                    <div class="winner hidden">
+                        <h3>🎉 TIME CAMPEÃO 🎉</h3>
+                        <h1 class="winner-name">[NOME DO TIME]</h1>
+                        <h2 class="winner-warcry">[GRITO DE GUERRA]</h2>
+
+                        <table class="finalTable">
+                            <thead>
+                                <tr>
+                                    <th class="team-name">Time</th>
+                                    <th class="points total-points">
+                                        Pontuação Total
+                                    </th>
+                                    <th class="points blots">Blots</th>
+                                    <th class="points plifs">Plifs</th>
+                                    <th class="points advrunghs">Advrunghs</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                        <br />
+
+                        <div class="center">
+                            <a href="../../index.html" class="main-btn"
+                                >✨ NOVO CAMPEONATO ✨</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../js/script.js"></script>
+        <script src="../js/components/random-teams.js"></script>
+        <script src="../js/components/confetti.js"></script>
+    </body>
+</html>

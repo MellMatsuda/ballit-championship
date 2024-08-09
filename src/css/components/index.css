@@ -1,9 +1,9 @@
 /* Página incial */
 
 body {
-    background-image: url("../../img/background.svg"); 
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    background-image: url("../../img/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
 
@@ -11,7 +11,7 @@ body {
     text-align: left;
 }
 
-.h1{
+.title1 {
     margin-top: -10px;
     font-size: 2.5em;
 }
